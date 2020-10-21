@@ -1,5 +1,13 @@
 <h1>Http Learn</h1>
-
-<div *ngFor="let item of data">
-  <p>聯賽: {{ item.league_id }}</p>
-</div>
+<table>
+  <tr>
+    <th>主隊</th>
+    <th>對戰</th>
+    <th>客隊</th>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{ item.team_id_c }}</td>
+    <td class="center">vs</td>
+    <td>{{ item.team_id_h }}</td>
+  </tr>
+</table>
