@@ -13,9 +13,9 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient, private ret: RetService) { }
   ngOnInit() {
     this.ret.getData().subscribe(json => {
-      this.data = json.ret[0].league_id;
+      this.data = json.ret;
       console.log(this.data);
-    })
+    });
   }
 
 }

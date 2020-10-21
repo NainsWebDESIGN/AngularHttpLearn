@@ -6,8 +6,8 @@ import { Observable } from 'rxjs/Observable';
 export class RetService {
 
   constructor(private http: HttpClient) { }
-  res = 'assets/json/oneday.json';
+  one = 'assets/json/oneday.json';
   getData(): Observable<any> {
-    return this.http.get(this.res);
+    return this.http.get(this.one);
   }
 }
